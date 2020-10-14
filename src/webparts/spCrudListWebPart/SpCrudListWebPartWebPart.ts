@@ -307,6 +307,9 @@ export default class SpCrudListWebPartWebPart extends BaseClientSideWebPart<ISpC
         </form>    
       </div>
       </div>`;
+    
+      this._renderList();  //calling the method to fill <div id="spListContainer"> area
+      this._setButtonsEventHandlers();
   }
 
   protected get dataVersion(): Version {
